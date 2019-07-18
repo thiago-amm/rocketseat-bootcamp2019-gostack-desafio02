@@ -72,6 +72,15 @@
         duplicadas entre o AirBNB e o Prettier como o uso ou não de aspas
         simples ou duplas.
 
+        Definir como conteúdo de .prettierrc:
+            {
+                "singleQuote": true,
+                "trailingComma": "es5"
+            }
+
+    Definir no ESLint fixing automático em vários arquivos de um diretório
+        yarn eslint --fix src --ext .js
+
 #### 4. Remover package-lock.json
 
     rm -f package-lock.json

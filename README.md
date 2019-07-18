@@ -81,6 +81,21 @@
     Definir no ESLint fixing automático em vários arquivos de um diretório
         yarn eslint --fix src --ext .js
 
+    Instalação do plugin EditorConfig no VSCode
+    O EditorConfig estabelece um conjunto de regras homogêneas e centralizadas
+    afim de configurar diversos editores de código diferentes.
+
+        Criar o arquivo .editorconfig
+        Adicionar conteúdo básico:
+            root = true
+
+            [*]
+            ident_style = space
+            ident_size = 2
+            charset = utf-8
+            trim_trailing_whitespace = true
+            insert_final_newline = true
+
 #### 4. Remover package-lock.json
 
     rm -f package-lock.json

@@ -104,7 +104,35 @@
 
     yarn
 
-#### 6. Instalar e configurar Sequelize
+#### 6. Instalar o Sequelize
 
-yarn add sequelize
-yarn add sequelize-cli -D
+    yarn add sequelize
+    yarn add sequelize-cli -D
+
+#### 7. Configurar o Sequelize
+
+    7.1 Criar arquivo .sequelizerc no diretório do projeto (meetapp)
+    7.2 Criar a configuração da conexão com o banco de dados.
+        7.2.1 mkdir meetapp/src/config/database.js
+            module.exports = {
+                dialect: 'postgres',
+                host: 'localhost',
+                username: 'postgres',
+                password: 'meetapp',
+                database: 'meetapp',
+                define: {
+                    timestamps: true,
+                    underscored: true,
+                    underscoredAll: true,
+                },
+            };
+    7.3 Criar diretório app/models no projeto
+        7.3.1 mkdir meetapp/src/app/models
+    7.4 Criar diretório database
+        7.4.1 mkdir meetapp/src/database
+    7.5 Criar diretório database/migrations
+        7.5.1 mkdir meetapp/src/database/migrations
+
+#### 8. Instalar o driver do Sequelize para conexão com o Postgres
+
+    8.1 yarn add pg pg-hstore

@@ -103,3 +103,8 @@
 #### 5. Atualizar dependências com Yarn
 
     yarn
+
+#### 6. Instalar e configurar Sequelize
+
+yarn add sequelize
+yarn add sequelize-cli -D

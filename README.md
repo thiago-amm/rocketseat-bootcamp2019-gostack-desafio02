@@ -140,3 +140,18 @@
 #### 9. Instalar o driver do Sequelize para conexão com o Postgres
 
     9.1 yarn add pg pg-hstore
+
+#### 10. Criar a tabela de usuários da aplicação
+
+    yarn sequelize migration:create --name=create-users
+
+    10.1 Editar a migration create-users e definir a criação da tabela users
+         com as colunas id (integer, not null, auto increment, primary key),
+         name (string, not null),
+         email (string, not null, unique),
+         password_hash (string, not null),
+         created_at (date, not null),
+         updated_at (date, not null)
+
+    10.2 Executar a migration create-users
+        yarn sequelize db:migrate

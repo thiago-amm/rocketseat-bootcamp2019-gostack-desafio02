@@ -155,3 +155,8 @@
 
     10.2 Executar a migration create-users
         yarn sequelize db:migrate
+#### 11. Instalar módulo para bcryptjs para gerar o hash das senhas
+    yarn add bcryptjs
+
+#### 12. Instalar módulo para suporte ao JWT
+    yarn add jsonwebtoken

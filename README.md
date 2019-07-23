@@ -106,7 +106,7 @@
 
 #### 6. Criação de Container Docker para o Postgres
 
-    docker postgres --name meetapp -e POSTGRES_PASSWORD=meetapp -p 5432:5432 -d
+    docker run --name meetapp -e POSTGRES_PASSWORD=meetapp -p 5432:5432 -d postgres
 
 #### 7. Instalar o Sequelize
 
